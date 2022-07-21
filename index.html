@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sprint1-mineSweeper</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <h1 title="mineSweeper">m i n e S w e e p e r</h1>
+
+    <div class=botton-container>
+        <button id="beginner" class="btn" onclick="chooseLevel(this)">Beginner</button>
+        <button id="medium" class="btn" onclick="chooseLevel(this)">Medium</button>
+        <button id="expert" class="btn" onclick="chooseLevel(this)">Expert</button>
+        <button id="expertXL" class="btn" onclick="chooseLevel(this)">expert XL</button>
+    </div>
+    <div class="hearts-container">
+        <div class="hearts">👻👻👻</div>
+    </div>
+
+    <div class="happy" onclick="playAgain()">😀</div>
+    <table class="center">
+        <tbody class="game-board">
+        </tbody>
+    </table>
+
+    <div class="watch">
+        <div class="time">
+            00:00:00
+        </div>
+        <div class="time safeClick" onclick="safeClick()">
+            safe click 
+            <span class="clicksLeft">3 left</span>
+        </div>
+    </div>
+    <!-- <img class="hint" src="img/hint.jpg" alt="hint" onclick="getHint(this)"> -->
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="play-again" onclick="playAgain()">play again</span>
+            <h2>YOU WON🏆</h2>
+        </div>
+    </div>
+
+    <script src="js/stopwatch.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>

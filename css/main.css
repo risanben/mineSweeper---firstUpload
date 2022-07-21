@@ -1,0 +1,202 @@
+body {
+    background-image: url(../img/minefield.jpg);
+    background-size: cover;
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+
+.center {
+    /* display: none; */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table {
+
+    /* margin-bottom: 100px; */
+    background-color: rgba(61, 25, 39, 0.796);
+    width: 150px;
+    height: 150px;
+    color: rgb(246, 225, 237);
+    
+}
+
+td {
+    border: 1px solid rgb(221, 203, 216);
+    /* background-color: rgba(49, 3, 36, 0.012); */
+    min-width: 20px;
+    height: 20px;
+    text-align: center;
+    /* font-size: 30px; */
+    /* color: rgb(22, 8, 21); */
+    /* margin: auto; */
+}
+
+td:hover{
+    background-color:rgba(49, 3, 36, 0.821) ;
+}
+
+.hearts-container {
+    font-size: 40px;
+    /* position: absolute; */
+    /* margin-top: 20%; */
+    /* margin-left: 7%; */
+    
+}
+.hearts{
+    text-align: center;
+    opacity: 70%;
+}
+
+h1  {
+
+    font-size: 10vw;
+    color: rgba(26, 21, 24, 0.555);
+    /* text-decoration-line: overline; */
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    /* -webkit-text-stroke: 0.3vw; */
+
+}
+
+.botton-container {
+   text-align: center;
+}
+
+.botton-container .btn{
+    /* position: relative; */
+    font-family: poppins;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: rgb(242, 224, 237);
+    font-weight: 400;
+    border: 5px solid #f173d145;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 1s;
+    background-color: #f173d145;
+
+}
+
+.botton-container .btn:hover{
+    box-shadow: 0 5px 50px 0 #64076d4c inset, 0 5px 50px 0 #64076d4c,
+                0 5px 50px 0 #64076d4c inset, 0 5px 50px 0 #64076d4c;
+    text-shadow: 0 0 5px #64076d4c, 0 0 5px #64076d4c;                                     
+}
+
+.happy{
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.happy:hover{
+    opacity: 60%;
+}
+
+.watch{
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.time{
+    font-family: poppins;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgba(8, 2, 6, 0.814);
+    font-weight: 400;
+    border: 5px solid rgba(242, 224, 237, 0.47);
+    border-radius: 50px;
+    transition: 1s;
+    background-color: rgba(242, 224, 237, 0.225); 
+    display: inline;
+    font-family: sans-serif;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 33, 29, 0.7);
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+    color: rgb(195, 192, 192);
+    font-size: 15px;
+  }
+  
+  .play-again {
+    float: right;
+    width: 5rem;
+    line-height: 2rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+    color: rgb(37, 37, 37);
+    transition: 0.3s transform ;
+    
+  }
+  
+  .play-again:hover{
+    background-color: rgb(243, 239, 239);
+    transform: scale(1.2);
+  }
+  
+  
+  .show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  }
+
+  .hint{
+    width: 30px;
+    /* margin-left: 30px; */
+    opacity: 90%;
+    margin-left: 50%;
+    margin-top: 40px;
+  }
+
+  .hint:hover{
+    opacity: 100%;
+    cursor: pointer;
+  }
+
+  .highlighted {
+    background-color:rgba(242, 236, 236, 0.629) ;
+  }
+/* 
+  td .zeros {
+    background-color: red;
+    color: black;
+    font-size: 50px;
+  } */
+
+  .safeClick:hover{
+    box-shadow: 0 5px 50px 0 #f2ecf24c inset, 0 5px 50px 0 #f2ecf24c,
+                0 5px 50px 0 #f2ecf24c inset, 0 5px 50px 0 #f2ecf24c;
+    text-shadow: 0 0 5px #f2ecf24c, 0 0 5px #f2ecf24c; 
+    cursor: pointer;
+  }
